@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendar</title>
+
+    <link rel="stylesheet" href="stylescal.css">
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Nazad</button>
+          <button id="nextButton">Naprijed</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Ponedjeljak</div>
+        <div>Utorak</div>
+        <div>Srijeda</div>
+        <div>Četvrtak</div>
+        <div>Petak</div>
+        <div>Subota</div>
+        <div>Nedjelja</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>Slobodan termin</h2>
+
+      <input id="eventTitleInput" placeholder="Mogu u..." />
+
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Vrijeme</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
